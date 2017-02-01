@@ -27,7 +27,6 @@ Meteor.startup(() => {
       Products.insert({
         productName, price,
         productImage: image.image()
-
       });
     });
   }
