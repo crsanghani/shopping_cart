@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import { Meteor } from 'meteor/meteor';
 import { Products } from '../imports/collections/products';
-import { image, helpers } from 'faker';
+import { image, commerce } from 'faker';
 
 Meteor.startup(() => {
   // code to run on server at startup
@@ -18,18 +18,21 @@ Meteor.startup(() => {
     // their docs (https://www.npmjs.com/package/faker)
 
     _.times(5000, () => {
-      //es6 destructuring
-      const {productName, price, product} = helpers.createCard();
+
+      const productName = commerce.productName();
+      const price = commerce.price();
+
+      // const { productName, price } = commerce.createCard();
 
       Products.insert({
-        productName, price, product,
+        productName, price,
         productImage: image.image()
 
       });
     });
   }
-  Meteor.publish('products', function(){
+  Meteor.publish('products', function(per_page){
     // return a limited product set initially
-    return Products.find({}, { limit: 21 });
+    return Products.find({}, { limit: per_page });
   });
 });

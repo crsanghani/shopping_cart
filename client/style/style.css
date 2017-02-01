@@ -1,0 +1,20 @@
+/* CSS declarations go here */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.thumbnail{
+  width: 300px;
+}
+
+.cart{
+  width: 300px;
+}
+
+.cart-btn{
+  float: right;
+  margin: 10 px;
+}
