@@ -20,3 +20,4 @@ Develop a functional shopping cart e-commerce site with as much of the below fun
 ## Actions
 I should have planned out the components first
 - I used this to re-learn about states and props, a great description using star wars https://medium.freecodecamp.com/react-props-state-explained-through-darth-vaders-hunt-for-the-rebels-8ee486576492#.80nk4lij0
+- Using React Meteor was probably a mistake, React Native would have been a better choice.
