@@ -16,3 +16,7 @@ Develop a functional shopping cart e-commerce site with as much of the below fun
 - Understand state and props better, I feel like I made some poor choices about the structure differences between CartList and the Products.
 - Look at other code examples of carts to see how I could have planned the build better (started by using the state functions rather that adding them afterwards)
 - Re-read the faker documentation for tweaks to the product generation (more suitable pictures, not a huge problem with dummy data but still something that should be addressed)
+
+## Actions
+I should have planned out the components first
+- I used this to re-learn about states and props, a great description using star wars https://medium.freecodecamp.com/react-props-state-explained-through-darth-vaders-hunt-for-the-rebels-8ee486576492#.80nk4lij0
